@@ -293,15 +293,15 @@
         <div class="sectioner-header text-center">
           <h3>Contáctanos</h3>
           <span class="line"></span>
-            <p>Si tienes alguna pregunta o necesitas más información, no dudes en contactarnos. Estamos aquí para ayudarte.</p>
+          <p>Si tienes alguna pregunta o necesitas más información, no dudes en contactarnos. Estamos aquí para ayudarte.</p>
         </div>
         <div class="section-content">
           <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-8">
-              <form id="contact_form" action="send_email.php" method="POST">
+              <form id="contact_form" action="https://formsubmit.co/contacto@quicksolver.cl" method="POST">
                 <div class="row">
                   <div class="col">
-                    <input type="text" id="your_name" class="form-input w-100" name="full-name" placeholder="Nombre Completo" required>
+                    <input type="text" id="your_name" class="form-input w-100" name="name" placeholder="Nombre Completo" required>
                   </div>
                   <div class="col">
                     <input type="email" id="email" class="form-input w-100" name="email" placeholder="Correo Electrónico" required>
@@ -309,6 +309,7 @@
                 </div>
                 <input type="text" id="subject" class="form-input w-100" name="subject" placeholder="Asunto">
                 <textarea class="form-input w-100" id="message" placeholder="Mensaje" name="message"></textarea>
+                <input type="hidden" name="_next" value="https://quicksolver.cl/thank-you.html">
                 <button class="btn-grad w-100 text-uppercase" type="submit" name="button">Enviar</button>
               </form>
             </div>
@@ -346,8 +347,7 @@
     </div>
   </div>
 </section>
-
-<!-------Contact End-------> 
+<!-------Contact End------->
 
 <!-------Download End------->
 <section class="download section-padding">
